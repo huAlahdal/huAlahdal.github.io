@@ -423,6 +423,20 @@ section {
   background-color: #149ddd;
 }
 
+.skills .row {
+  text-align: center;
+}
+
+.devicon {
+  font-size: 4rem;
+  -webkit-filter: drop-shadow(8px 8px 10px #f5f8fd);
+  filter: drop-shadow(8px 8px 10px #f5f8fd);
+}
+
+.tech-label {
+  font-size: .65rem;
+  margin-top: 3px;
+}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
