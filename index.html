@@ -4,327 +4,377 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hussein Alahdal is a full-stack software developer in Jeddah building web, mobile, dashboard, and API products.">
-  <meta name="keywords" content="Hussein Alahdal, full stack developer, software engineer, web developer, mobile developer, Jeddah">
+  <meta name="description" content="Hussein Alahdal — Full-stack developer in Jeddah. Web, mobile, dashboards, APIs.">
+  <meta name="keywords" content="Hussein Alahdal, full stack developer, software engineer, Jeddah">
   <meta name="author" content="Hussein Alahdal">
-  <meta property="og:title" content="Hussein Alahdal - Full Stack Developer">
-  <meta property="og:description" content="Modern portfolio for Hussein Alahdal, a full-stack developer building reliable web, mobile, dashboard, and API products.">
+  <meta property="og:title" content="Hussein Alahdal — Full Stack Developer">
+  <meta property="og:description" content="Portfolio of Hussein Alahdal. Full-stack developer building web, mobile, dashboard, and API products.">
   <meta property="og:image" content="assets/img/Untitled.png">
   <meta property="og:type" content="website">
 
-  <title>Hussein Alahdal | Full Stack Developer</title>
+  <title>Hussein Alahdal — Full Stack Developer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Go to homepage">
-      <span class="brand-mark">HA</span>
-      <span>Hussein Alahdal</span>
-    </a>
 
-    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
-      <i class="bx bx-menu"></i>
-    </button>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="#top">
+        <span class="logo-mark">H</span>
+        <span class="logo-text">
+          <strong>Hussein Alahdal</strong>
+          <small>Full-stack developer</small>
+        </span>
+      </a>
 
-    <nav class="site-nav" aria-label="Primary navigation">
-      <a href="#work">Work</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Main">
+        <div class="nav-links">
+          <a href="#projects">Work</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+        </div>
+        <a href="#contact" class="nav-pill"><i class="bx bx-conversation"></i> Let's talk</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero section-pad">
-      <div class="hero-content reveal">
-        <p class="eyebrow">Full-stack developer based in Jeddah, Saudi Arabia</p>
-        <h1>I build practical web and mobile products that help teams move faster.</h1>
-        <p class="hero-copy">
-          I design and develop responsive frontends, scalable APIs, admin dashboards, and Android apps with a focus on reliable delivery, clean user experience, and maintainable code.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#work">View Projects</a>
-          <a class="btn btn-secondary" href="mailto:ahdal.hu@gmail.com">Email Me</a>
-        </div>
-        <div class="hero-meta" aria-label="Portfolio highlights">
-          <span><strong>6+</strong> years experience</span>
-          <span><strong>6</strong> featured projects</span>
-          <span><strong>Web</strong> and mobile</span>
-        </div>
-      </div>
 
-      <div class="hero-panel reveal" aria-label="Profile summary">
-        <div class="portrait-wrap">
-          <img src="assets/img/Untitled.png" alt="Portrait of Hussein Alahdal">
-        </div>
-        <div class="availability">
-          <span class="status-dot"></span>
-          Available for software projects
-        </div>
-        <div class="stack-preview">
-          <span>React</span>
-          <span>Angular</span>
-          <span>Node.js</span>
-          <span>NestJS</span>
-          <span>.NET</span>
-          <span>Kotlin</span>
-        </div>
-      </div>
-    </section>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-layout">
 
-    <section class="intro section-pad" id="about">
-      <div class="section-heading reveal">
-        <p class="eyebrow">About</p>
-        <h2>Developer with a product mindset.</h2>
-      </div>
-      <div class="intro-grid">
-        <p class="lead reveal">
-          I am a software engineer who enjoys turning business needs into useful applications. My background spans frontend interfaces, backend services, dashboards, database-backed systems, and Android development.
-        </p>
-        <div class="about-points reveal">
-          <div>
-            <i class="bx bx-layer"></i>
-            <h3>End-to-end delivery</h3>
-            <p>From planning and UI implementation to APIs, deployment, debugging, and documentation.</p>
+        <!-- Left column -->
+        <div class="hero-left">
+          <div class="hero-label">
+            <span class="dot"></span>
+            Available for projects
           </div>
-          <div>
-            <i class="bx bx-tachometer"></i>
-            <h3>Performance minded</h3>
-            <p>I keep applications fast, clear, and easy to maintain as features grow.</p>
+          <h1>I build<br>software that<br><em>actually works.</em></h1>
+          <p>Full-stack developer in Jeddah, Saudi Arabia. I ship web apps, mobile apps, dashboards, and APIs — with a bias toward clarity and getting things done.</p>
+          <div class="hero-cta">
+            <a class="cta-primary" href="#projects">See my work <i class="bx bx-right-arrow-alt"></i></a>
+            <a class="cta-ghost" href="mailto:ahdal.hu@gmail.com"><i class="bx bx-envelope"></i> Get in touch</a>
           </div>
-          <div>
-            <i class="bx bx-group"></i>
-            <h3>Team friendly</h3>
-            <p>Comfortable collaborating with clients, designers, stakeholders, and technical teams.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="work section-pad" id="work">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Selected work</p>
-        <h2>Projects with real workflows, data, and users in mind.</h2>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card featured reveal">
-          <a href="https://github.com/huAlahdal/mashurah-frontend" target="_blank" rel="noopener noreferrer" aria-label="Open Mashurah Website on GitHub">
-            <img src="assets/img/projects/mashora.PNG" alt="Mashurah legal consultation website screenshot">
-            <div class="project-body">
-              <p class="project-type">Legal services platform</p>
-              <h3>Mashurah Website</h3>
-              <p>A consultation system that connects users with lawyers, supports service requests, and presents legal offerings in a structured Arabic interface.</p>
-              <div class="tags">
-                <span>Frontend</span>
-                <span>Responsive UI</span>
-                <span>Arabic UX</span>
-              </div>
+          <!-- Stats row -->
+          <div class="hero-metrics">
+            <div class="metric">
+              <strong>6+</strong>
+              <span>Years exp.</span>
             </div>
-          </a>
-        </article>
-
-        <article class="project-card reveal">
-          <a href="https://github.com/huAlahdal/cati-frontend" target="_blank" rel="noopener noreferrer" aria-label="Open Steady Pace Dashboard on GitHub">
-            <img src="assets/img/projects/cati.PNG" alt="Steady Pace dashboard screenshot">
-            <div class="project-body">
-              <p class="project-type">Operations dashboard</p>
-              <h3>Steady Pace Dashboard</h3>
-              <p>An internal call-center dashboard for tracking records, attempts, statuses, scheduling, and research project targets.</p>
-              <div class="tags">
-                <span>Dashboard</span>
-                <span>Angular</span>
-                <span>Data UI</span>
-              </div>
+            <div class="metric-divider"></div>
+            <div class="metric">
+              <strong>8</strong>
+              <span>Projects</span>
             </div>
-          </a>
-        </article>
-
-        <article class="project-card reveal">
-          <a href="https://github.com/huAlahdal/nestjs-simple-api" target="_blank" rel="noopener noreferrer" aria-label="Open Todo API on GitHub">
-            <img src="assets/img/projects/nestAPI.PNG" alt="NestJS API screenshot">
-            <div class="project-body">
-              <p class="project-type">Backend API</p>
-              <h3>Todo API</h3>
-              <p>A RESTful NestJS task API for creating, updating, retrieving, and organizing tasks with a clean backend structure.</p>
-              <div class="tags">
-                <span>NestJS</span>
-                <span>REST API</span>
-                <span>Node.js</span>
-              </div>
+            <div class="metric-divider"></div>
+            <div class="metric">
+              <strong>4</strong>
+              <span>Specialties</span>
             </div>
-          </a>
-        </article>
-
-        <article class="project-card reveal">
-          <a href="https://github.com/huAlahdal/animeApp" target="_blank" rel="noopener noreferrer" aria-label="Open Anime App on GitHub">
-            <img src="assets/img/projects/animeApp.PNG" alt="Anime Android app screenshot">
-            <div class="project-body">
-              <p class="project-type">Android app</p>
-              <h3>Anime App</h3>
-              <p>A Kotlin-based mobile app for anime news, episodes, schedules, rankings, comments, and reviews.</p>
-              <div class="tags">
-                <span>Kotlin</span>
-                <span>Android</span>
-                <span>Mobile UX</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="project-card reveal">
-          <a href="https://github.com/huAlahdal/NokiaAndBell-GUI" target="_blank" rel="noopener noreferrer" aria-label="Open Nokia and Bell GUI on GitHub">
-            <img src="assets/img/projects/nokiaandbill.PNG" alt="Nokia and Bell GUI screenshot">
-            <div class="project-body">
-              <p class="project-type">Search application</p>
-              <h3>Nokia &amp; Bell GUI</h3>
-              <p>An application for searching company database records by keyword through an internal API workflow.</p>
-              <div class="tags">
-                <span>GUI</span>
-                <span>API</span>
-                <span>Search</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="project-card reveal">
-          <a href="https://github.com/huAlahdal/Portfolio-v1" target="_blank" rel="noopener noreferrer" aria-label="Open old portfolio project on GitHub">
-            <img src="assets/img/projects/portfolio.PNG" alt="Previous portfolio screenshot">
-            <div class="project-body">
-              <p class="project-type">Personal website</p>
-              <h3>Portfolio v1</h3>
-              <p>The previous portfolio version, now redesigned into a more polished, focused, and professional personal site.</p>
-              <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Portfolio</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <section class="skills section-pad" id="skills">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Skills</p>
-        <h2>Tools I use to build full-stack products.</h2>
-      </div>
-
-      <div class="skills-layout">
-        <div class="skill-column reveal">
-          <h3>Frontend</h3>
-          <div class="skill-list">
-            <span><i class="devicon-html5-plain"></i>HTML</span>
-            <span><i class="devicon-css3-plain"></i>CSS</span>
-            <span><i class="devicon-javascript-plain"></i>JavaScript</span>
-            <span><i class="devicon-typescript-plain"></i>TypeScript</span>
-            <span><i class="devicon-react-original"></i>React</span>
-            <span><i class="devicon-angularjs-plain"></i>Angular</span>
-            <span><i class="devicon-bootstrap-plain"></i>Bootstrap</span>
           </div>
         </div>
 
-        <div class="skill-column reveal">
-          <h3>Backend</h3>
-          <div class="skill-list">
-            <span><i class="devicon-nodejs-plain"></i>Node.js</span>
-            <span><i class="devicon-nestjs-plain"></i>NestJS</span>
-            <span><i class="devicon-dotnetcore-plain"></i>.NET Core</span>
-            <span><i class="devicon-python-plain"></i>Python</span>
-            <span><i class="devicon-csharp-plain"></i>C#</span>
-            <span><i class="devicon-mongodb-plain"></i>MongoDB</span>
+        <!-- Right column — photo + social -->
+        <div class="hero-right">
+          <div class="hero-photo-area">
+            <div class="photo-block"></div>
+            <div class="photo-frame">
+              <img src="assets/img/Untitled.png" alt="Hussein Alahdal" loading="eager">
+            </div>
+            <div class="photo-caption">
+              <i class="bx bx-map"></i> Jeddah, Saudi Arabia
+            </div>
           </div>
-        </div>
-
-        <div class="skill-column reveal">
-          <h3>Mobile and tools</h3>
-          <div class="skill-list">
-            <span><i class="devicon-kotlin-plain"></i>Kotlin</span>
-            <span><i class="devicon-androidstudio-plain"></i>Android Studio</span>
-            <span><i class="devicon-git-plain"></i>Git</span>
-            <span><i class="devicon-nginx-original"></i>Nginx</span>
-            <span><i class="devicon-redux-original"></i>Redux</span>
-            <span><i class="devicon-cplusplus-plain"></i>C++</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="experience section-pad" id="experience">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Experience</p>
-        <h2>Professional background.</h2>
-      </div>
-
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <span>June 2021 - Present</span>
-          <h3>Full Stack Developer</h3>
-          <p>Al JUAN Advanced Co, Jeddah</p>
-          <ul>
-            <li>Build and maintain business applications across frontend, backend, and deployment layers.</li>
-            <li>Improve production code, debug issues, document workflows, and support internal users.</li>
-          </ul>
-        </article>
-
-        <article class="timeline-item reveal">
-          <span>May 2020 - June 2021</span>
-          <h3>Front End Developer</h3>
-          <p>Steady Pace, Remote</p>
-          <ul>
-            <li>Delivered user interfaces for data-heavy internal systems and research workflows.</li>
-            <li>Collaborated remotely with product and technical teams to ship stable features.</li>
-          </ul>
-        </article>
-
-        <article class="timeline-item reveal">
-          <span>March 2019 - March 2020</span>
-          <h3>IT Technician</h3>
-          <p>Al JUAN Advanced Co, Jeddah</p>
-          <ul>
-            <li>Supported IT operations, troubleshooting, maintenance, and technical user needs.</li>
-          </ul>
-        </article>
-
-        <article class="timeline-item reveal">
-          <span>Completed 2018</span>
-          <h3>Bachelor's in Software Engineering</h3>
-          <p>Multimedia University, Cyberjaya, Malaysia</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact section-pad" id="contact">
-      <div class="contact-card reveal">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Have a software project in mind?</h2>
-          <p>I am happy to talk about web apps, mobile apps, dashboards, APIs, technical maintenance, or improving an existing product.</p>
-        </div>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:ahdal.hu@gmail.com">ahdal.hu@gmail.com</a>
-          <a class="btn btn-secondary" href="tel:+966550494659">+966 55 049 4659</a>
-          <div class="socials">
+          <div class="hero-social">
             <a href="https://github.com/huAlahdal" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
             <a href="https://www.linkedin.com/in/hualahdal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+            <a href="mailto:ahdal.hu@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Marquee -->
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Web Apps</span><span>·</span>
+          <span>Mobile</span><span>·</span>
+          <span>Dashboards</span><span>·</span>
+          <span>REST APIs</span><span>·</span>
+          <span>React</span><span>·</span>
+          <span>Angular</span><span>·</span>
+          <span>Node.js</span><span>·</span>
+          <span>Kotlin</span><span>·</span>
+          <span>.NET</span><span>·</span>
+          <span>MongoDB</span><span>·</span>
+          <span>Web Apps</span><span>·</span>
+          <span>Mobile</span><span>·</span>
+          <span>Dashboards</span><span>·</span>
+          <span>REST APIs</span><span>·</span>
+          <span>React</span><span>·</span>
+          <span>Angular</span><span>·</span>
+          <span>Node.js</span><span>·</span>
+          <span>Kotlin</span><span>·</span>
+          <span>.NET</span><span>·</span>
+          <span>MongoDB</span><span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects" id="projects">
+      <div class="section-head">
+        <span class="mono label">Selected work</span>
+        <h2>Things I've built.</h2>
+      </div>
+
+      <!-- Featured -->
+      <a class="project-featured" href="https://github.com/huAlahdal/mashurah-frontend" target="_blank" rel="noopener noreferrer">
+        <div class="pf-img">
+          <img src="assets/img/projects/mashora.PNG" alt="Mashurah legal consultation website">
+        </div>
+        <div class="pf-info">
+          <span class="mono label">Featured · Frontend</span>
+          <h3>Mashurah Website</h3>
+          <p>Legal-services interface with consultation flows, lawyer profiles, and a fully structured Arabic user experience.</p>
+          <div class="tag-row">
+            <span>Frontend</span><span>Responsive</span><span>Arabic UX</span>
+          </div>
+          <span class="pf-arrow"><i class="bx bx-right-arrow-alt"></i></span>
+        </div>
+      </a>
+
+      <!-- Grid -->
+      <div class="project-grid">
+
+        <a class="project-item" href="https://github.com/huAlahdal/cati-frontend" target="_blank" rel="noopener noreferrer">
+          <div class="pi-img"><img src="assets/img/projects/cati.PNG" alt="Steady Pace dashboard"></div>
+          <div class="pi-body">
+            <span class="mono label">Dashboard</span>
+            <h3>Steady Pace</h3>
+            <p>Call-center operations dashboard — tracking, scheduling, statuses, and research targets.</p>
+            <div class="tag-row"><span>Angular</span><span>Data UI</span></div>
+          </div>
+        </a>
+
+        <a class="project-item" href="https://github.com/huAlahdal/nestjs-simple-api" target="_blank" rel="noopener noreferrer">
+          <div class="pi-img"><img src="assets/img/projects/nestAPI.PNG" alt="NestJS API"></div>
+          <div class="pi-body">
+            <span class="mono label">Backend</span>
+            <h3>Todo API</h3>
+            <p>RESTful NestJS API for task management with CRUD operations.</p>
+            <div class="tag-row"><span>NestJS</span><span>REST</span><span>Node</span></div>
+          </div>
+        </a>
+
+        <a class="project-item" href="https://github.com/huAlahdal/animeApp" target="_blank" rel="noopener noreferrer">
+          <div class="pi-img"><img src="assets/img/projects/animeApp.PNG" alt="Anime App"></div>
+          <div class="pi-body">
+            <span class="mono label">Mobile</span>
+            <h3>Anime App</h3>
+            <p>Kotlin Android app — news, episodes, schedules, rankings, and user reviews.</p>
+            <div class="tag-row"><span>Kotlin</span><span>Android</span></div>
+          </div>
+        </a>
+
+        <a class="project-item" href="https://github.com/huAlahdal/NokiaAndBell-GUI" target="_blank" rel="noopener noreferrer">
+          <div class="pi-img"><img src="assets/img/projects/nokiaandbill.PNG" alt="Nokia & Bell GUI"></div>
+          <div class="pi-body">
+            <span class="mono label">Desktop</span>
+            <h3>Nokia & Bell GUI</h3>
+            <p>Internal search application for querying company database records via API.</p>
+            <div class="tag-row"><span>GUI</span><span>API</span><span>Search</span></div>
+          </div>
+        </a>
+
+        <a class="project-item" href="https://github.com/huAlahdal/Portfolio-v1" target="_blank" rel="noopener noreferrer">
+          <div class="pi-img"><img src="assets/img/projects/portfolio.PNG" alt="Portfolio v1"></div>
+          <div class="pi-body">
+            <span class="mono label">Web</span>
+            <h3>Portfolio v1</h3>
+            <p>Previous iteration of this portfolio — redesigned into what you see now.</p>
+            <div class="tag-row"><span>HTML</span><span>CSS</span></div>
+          </div>
+        </a>
+
+        <a class="project-item" href="https://github.com/huAlahdal" target="_blank" rel="noopener noreferrer">
+          <div class="pi-img"><img src="assets/img/projects/gameAddonLaptop.jpeg" alt="Game Addon"></div>
+          <div class="pi-body">
+            <span class="mono label">Tooling</span>
+            <h3>Game Addon Work</h3>
+            <p>Admin workflow experiments for managing game add-on content.</p>
+            <div class="tag-row"><span>UI</span><span>Tools</span></div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT (Bento Grid) ===== -->
+    <section class="about" id="about">
+      <div class="section-head">
+        <span class="mono label">Who I am</span>
+        <h2>A bit about me.</h2>
+      </div>
+
+      <div class="bento">
+        <div class="bento-card bento-intro">
+          <p>I turn requirements into useful applications — clean interfaces, reliable services, practical admin tools, and mobile experiences that real users can understand.</p>
+          <span class="mono">Based in Jeddah, SA</span>
+        </div>
+
+        <div class="bento-card bento-stack">
+          <h3>Frontend</h3>
+          <div class="chip-grid">
+            <span><i class="devicon-html5-plain"></i> HTML</span>
+            <span><i class="devicon-css3-plain"></i> CSS</span>
+            <span><i class="devicon-javascript-plain"></i> JS</span>
+            <span><i class="devicon-typescript-plain"></i> TS</span>
+            <span><i class="devicon-react-original"></i> React</span>
+            <span><i class="devicon-angularjs-plain"></i> Angular</span>
+            <span><i class="devicon-bootstrap-plain"></i> Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="bento-card bento-stack">
+          <h3>Backend</h3>
+          <div class="chip-grid">
+            <span><i class="devicon-nodejs-plain"></i> Node</span>
+            <span><i class="devicon-nestjs-plain"></i> NestJS</span>
+            <span><i class="devicon-dotnetcore-plain"></i> .NET</span>
+            <span><i class="devicon-python-plain"></i> Python</span>
+            <span><i class="devicon-csharp-plain"></i> C#</span>
+            <span><i class="devicon-mongodb-plain"></i> Mongo</span>
+          </div>
+        </div>
+
+        <div class="bento-card bento-stack">
+          <h3>Mobile & Tools</h3>
+          <div class="chip-grid">
+            <span><i class="devicon-kotlin-plain"></i> Kotlin</span>
+            <span><i class="devicon-androidstudio-plain"></i> Android</span>
+            <span><i class="devicon-git-plain"></i> Git</span>
+            <span><i class="devicon-nginx-original"></i> Nginx</span>
+            <span><i class="devicon-redux-original"></i> Redux</span>
+            <span><i class="devicon-cplusplus-plain"></i> C++</span>
+          </div>
+        </div>
+
+        <div class="bento-card bento-what">
+          <div class="what-item">
+            <i class="bx bx-layer"></i>
+            <div>
+              <h4>End-to-end delivery</h4>
+              <p>UI, APIs, deployment, debugging, documentation.</p>
+            </div>
+          </div>
+          <div class="what-item">
+            <i class="bx bx-line-chart"></i>
+            <div>
+              <h4>Operational systems</h4>
+              <p>Data-heavy dashboards and internal tools.</p>
+            </div>
+          </div>
+          <div class="what-item">
+            <i class="bx bx-mobile-alt"></i>
+            <div>
+              <h4>Mobile development</h4>
+              <p>Android apps with Kotlin and product UX.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="experience" id="experience">
+      <div class="section-head">
+        <span class="mono label">Background</span>
+        <h2>Where I've worked.</h2>
+      </div>
+
+      <div class="exp-list">
+        <article class="exp-row reveal">
+          <div class="exp-when mono">Jun 2021 — Now</div>
+          <div class="exp-body">
+            <h3>Full Stack Developer</h3>
+            <p class="exp-where">Al JUAN Advanced Co · Jeddah</p>
+            <ul>
+              <li>Build and maintain business apps across frontend, backend, and deployment.</li>
+              <li>Improve production code, debug issues, document workflows, support internal users.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-row reveal">
+          <div class="exp-when mono">May 2020 — Jun 2021</div>
+          <div class="exp-body">
+            <h3>Front End Developer</h3>
+            <p class="exp-where">Steady Pace · Remote</p>
+            <ul>
+              <li>Delivered interfaces for data-heavy internal systems and research workflows.</li>
+              <li>Collaborated remotely with product and technical teams to ship stable features.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-row reveal">
+          <div class="exp-when mono">Mar 2019 — Mar 2020</div>
+          <div class="exp-body">
+            <h3>IT Technician</h3>
+            <p class="exp-where">Al JUAN Advanced Co · Jeddah</p>
+            <ul>
+              <li>IT operations, troubleshooting, maintenance, and technical support.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-row reveal">
+          <div class="exp-when mono">2018</div>
+          <div class="exp-body">
+            <h3>BSc Software Engineering</h3>
+            <p class="exp-where">Multimedia University · Malaysia</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="contact-inner">
+        <span class="mono label">Get in touch</span>
+        <h2>Have a project<br>in mind<em>?</em></h2>
+        <p>I'm open to web apps, mobile apps, dashboards, APIs, or improving an existing product.</p>
+        <div class="contact-links">
+          <a class="cta-primary" href="mailto:ahdal.hu@gmail.com"><i class="bx bx-envelope"></i> ahdal.hu@gmail.com</a>
+          <a class="cta-ghost" href="tel:+966550494659"><i class="bx bx-phone"></i> +966 55 049 4659</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/huAlahdal" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/hualahdal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="site-footer">
-    <p>Copyright <span id="year">2026</span> Hussein A. Alahdal. Built with HTML, CSS, and JavaScript.</p>
-    <a href="#top">Back to top</a>
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Hussein Alahdal</span>
+    <a href="#top">Top ↑</a>
   </footer>
 
   <script src="assets/js/main.js"></script>

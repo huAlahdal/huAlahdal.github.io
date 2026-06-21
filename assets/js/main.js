@@ -1,57 +1,63 @@
+// Portfolio v4 — Scripts
+
 const body = document.body;
-const navToggle = document.querySelector(".nav-toggle");
-const navLinks = document.querySelectorAll(".site-nav a");
-const sections = document.querySelectorAll("main section[id]");
-const revealItems = document.querySelectorAll(".reveal");
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelectorAll(".nav a");
 const year = document.querySelector("#year");
 
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+// Year
+if (year) year.textContent = new Date().getFullYear();
 
-if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    const isOpen = body.classList.toggle("nav-open");
-    navToggle.setAttribute("aria-expanded", String(isOpen));
-    navToggle.innerHTML = isOpen ? '<i class="bx bx-x"></i>' : '<i class="bx bx-menu"></i>';
+// Mobile menu
+if (menuBtn) {
+  menuBtn.addEventListener("click", () => {
+    const open = body.classList.toggle("nav-open");
+    menuBtn.setAttribute("aria-expanded", String(open));
   });
 }
 
-navLinks.forEach((link) => {
+navLinks.forEach(link => {
   link.addEventListener("click", () => {
     body.classList.remove("nav-open");
-    if (navToggle) {
-      navToggle.setAttribute("aria-expanded", "false");
-      navToggle.innerHTML = '<i class="bx bx-menu"></i>';
-    }
+    if (menuBtn) menuBtn.setAttribute("aria-expanded", "false");
   });
 });
 
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.14
+// Scroll reveal — observe all animatable elements
+const animEls = document.querySelectorAll(
+  ".reveal, .project-item, .bento-card, .exp-row, .project-featured, .hero-text, .hero-photo"
+);
+
+// Set stagger index
+document.querySelectorAll(".project-grid, .bento, .exp-list").forEach(parent => {
+  [...parent.children].forEach((child, i) => child.style.setProperty("--i", i));
 });
 
-revealItems.forEach((item) => revealObserver.observe(item));
-
-const navObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      return;
-    }
-
-    navLinks.forEach((link) => {
-      link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
     });
-  });
-}, {
-  rootMargin: "-40% 0px -50% 0px"
-});
+  },
+  { threshold: 0.08, rootMargin: "0px 0px -30px 0px" }
+);
 
-sections.forEach((section) => navObserver.observe(section));
+animEls.forEach(el => observer.observe(el));
+
+// Active nav tracking
+const sections = document.querySelectorAll("main section[id]");
+const navObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach(link => {
+        link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
+      });
+    });
+  },
+  { rootMargin: "-40% 0px -50% 0px" }
+);
+sections.forEach(s => navObserver.observe(s));
